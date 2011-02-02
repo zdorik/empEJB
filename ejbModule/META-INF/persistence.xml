@@ -1,0 +1,15 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+      <persistence-unit name="personnelDepartment">
+            <jta-data-source>java:/EJB</jta-data-source>
+            <class>entity.Employee</class>
+            <class>entity.Department</class>
+			<class>entity.Project</class>
+			<class>entity.ParkingSpace</class>
+			<properties>
+				<property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver" />
+				<property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/ejb" />
+				<property name="eclipselink.jdbc.password" value="zdorik" />
+				<property name="eclipselink.jdbc.user" value="root" />
+			</properties>
+      </persistence-unit>
+</persistence> 
